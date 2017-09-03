@@ -1,5 +1,6 @@
 package com.niczo.Config;
 
+import com.niczo.Resources.BlogResource;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,6 @@ import org.springframework.stereotype.Component;
 public class JerseyConfig extends ResourceConfig {
 
     public JerseyConfig(){
-        register()
+        packages("com.niczo.Resources");
     }
 }
